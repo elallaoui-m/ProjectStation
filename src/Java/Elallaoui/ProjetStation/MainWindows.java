@@ -52,7 +52,6 @@ public class MainWindows extends JFrame {
 
 
         progressBar = new JProgressBar();
-        progressBar.setValue(86);
         progressBar.setOrientation(JProgressBar.HORIZONTAL);
         progress.add(progressBar);
 

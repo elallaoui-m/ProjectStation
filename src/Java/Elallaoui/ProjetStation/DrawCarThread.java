@@ -8,7 +8,7 @@ import java.io.IOException;
 
 public class DrawCarThread extends Thread{
 
-    JFrame myFrame;
+    MainWindows myFrame;
     DrawCar newCar;
     GasContainer gasContainer;
     public final static Object obj = new Object();
@@ -29,6 +29,7 @@ public class DrawCarThread extends Thread{
         super.run();
 
         gasContainer.fillCar((int) (Math.random()*50));
+        myFrame.getProgressBar().setValue(gasContainer.gasAmount);
 
         Timer timer = new Timer(delay, new ActionListener(){
             public void actionPerformed(ActionEvent e) {
