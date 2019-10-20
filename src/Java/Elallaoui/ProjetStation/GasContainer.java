@@ -1,12 +1,13 @@
 package Java.Elallaoui.ProjetStation;
 
-import static java.lang.Thread.sleep;
+/**
+ * class responsable de la gestion du reservoir de gasoil
+ */
+public class GasContainer implements Runnable {
 
-public class GasContainer implements Runnable{
-
-    int gasAmount;
+    int gasAmount; //Quantite
     boolean isEmpty;
-    MainWindows myframe;
+    MainWindows myframe; //Fram principale
 
 
     public GasContainer(MainWindows myframe) {
@@ -33,8 +34,7 @@ public class GasContainer implements Runnable{
         isEmpty = empty;
     }
 
-    public void refillGaz()
-    {
+    public void refillGaz() {
 
         setGasAmount(100);
         isEmpty = false;
@@ -43,25 +43,31 @@ public class GasContainer implements Runnable{
     }
 
 
-
-    public void fillCar(int wantedGaz)
-    {
-        gasAmount-=wantedGaz;
-        if (gasAmount<0)
-        {
+    /**
+     *
+     * @param wantedGaz Quantite de gas volue par une voiture
+     *                  la quantite sera soustraire de la quantite existee dans le reservoir
+     */
+    public void fillCar(int wantedGaz) {
+        gasAmount -= wantedGaz;
+        if (gasAmount < 0) {
             gasAmount = 0;
             isEmpty = true;
         }
     }
 
+    /**
+     * le Runnable responsable de l'appel a la camion du gasoil apres atteindre la minimum du gasoil
+     * dans le reservoir
+     * ce thread est appele dans la fonction run() de la class DrawCarThread
+     */
     @Override
     public void run() {
 
-        DrawTruckThread drawTruckThread = new DrawTruckThread(myframe,10,this);
+        DrawTruckThread drawTruckThread = new DrawTruckThread(myframe, 10, this);
         drawTruckThread.start();
 
-        while (true)
-        {
+        while (true) {
             if (gasAmount == 100)
                 drawTruckThread.stop();
             break;

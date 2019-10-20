@@ -1,16 +1,10 @@
 package Java.Elallaoui.ProjetStation;
 
 
-import javax.imageio.ImageIO;
 import javax.swing.*;
-import java.awt.*;
-import java.awt.image.BufferedImage;
-import java.io.File;
-import java.io.IOException;
 
 /**
-c'est la classe principale qui herite de JFrame et contient la fonctions main
-
+ * c'est la classe principale qui herite de JFrame et contient la fonctions main
  */
 
 public class MainWindows extends JFrame {
@@ -19,25 +13,21 @@ public class MainWindows extends JFrame {
     JPanel progress;
 
     DrawCar carRoad;
-    DrawTruck truckRoad;
     GasContainer gasContainer;
 
     Car car;
     Truck truck;
 
 
-
-
-    MainWindows()
-    {
+    MainWindows() {
 
         // parametre frame
         super("Gas Station");
-        setSize(800,580);
+        setSize(800, 580);
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
-        setLayout(new BoxLayout(this.getContentPane(),BoxLayout.Y_AXIS));
+        setLayout(new BoxLayout(this.getContentPane(), BoxLayout.Y_AXIS));
 
         gasContainer = new GasContainer(this);
         progressBar = new JProgressBar();
@@ -46,22 +36,42 @@ public class MainWindows extends JFrame {
         progress = new JPanel();
 
 
-        car = new Car(0,430,gasContainer);
-        truck = new Truck(-250,350,gasContainer);
-        carRoad = new DrawCar(car,truck);
+        car = new Car(0, 450, gasContainer);
+        truck = new Truck(-250, 370, gasContainer);
+        carRoad = new DrawCar(car, truck);
 
         //add to jframe
         getContentPane().add(carRoad);
-
-
 
 
         carRoad.add(progressBar);
 
     }
 
+    /**
+     * Image panel pour la mettre une image comme backgroud d'un component
+     * class ImagePanel extends JComponent {
+     * private Image image;
+     * public ImagePanel(Image image) {
+     * this.image = image;
+     * }
+     *
+     * @Override protected void paintComponent(Graphics g) {
+     * super.paintComponent(g);
+     * g.drawImage(image, 0, 0, this);
+     * }
+     * }
+     */
 
 
+    public static void main(String[] args) {
+        MainWindows mainWindows = new MainWindows();
+        mainWindows.setVisible(true);
+
+        DrawCarThread thread1 = new DrawCarThread(mainWindows, 10, mainWindows.gasContainer);
+        thread1.start();
+
+    }
 
     public JProgressBar getProgressBar() {
         return progressBar;
@@ -73,33 +83,5 @@ public class MainWindows extends JFrame {
 
     public JPanel getCarRoad() {
         return carRoad;
-    }
-
-
-
-    /**
-     *
-     *Image panel pour la mettre une image comme backgroud d'un component
-       class ImagePanel extends JComponent {
-        private Image image;
-        public ImagePanel(Image image) {
-            this.image = image;
-        }
-        @Override
-        protected void paintComponent(Graphics g) {
-            super.paintComponent(g);
-            g.drawImage(image, 0, 0, this);
-        }
-    }*/
-
-
-
-    public static void main(String[] args) {
-        MainWindows mainWindows = new MainWindows();
-        mainWindows.setVisible(true);
-
-       DrawCarThread thread1 = new DrawCarThread(mainWindows,10,mainWindows.gasContainer);
-       thread1.start();
-
     }
 }

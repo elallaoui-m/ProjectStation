@@ -8,18 +8,18 @@ import java.io.File;
 import java.io.IOException;
 
 /**
- *  JPanel pour le dessin de la voiture
+ * JPanel pour le dessin de la voiture
  */
-public class DrawCar extends JPanel  {
+public class DrawCar extends JPanel {
 
-    int x,y;
+    int x, y;
     Car car;
     Truck truck;
 
     public DrawCar() {
     }
 
-    public DrawCar(Car car,Truck truck) {
+    public DrawCar(Car car, Truck truck) {
         this.x = x;
         this.y = y;
 
@@ -37,15 +37,24 @@ public class DrawCar extends JPanel  {
         } catch (IOException e) {
             e.printStackTrace();
         }
-        g.drawImage(myImage,0,0,null);
+        g.drawImage(myImage, 0, 0, null);
         car.drawCar(g);
         truck.drawCar(g);
 
     }
 
+    /**
+     *
+     * @return Car
+     */
     public Car getCar() {
         return car;
     }
+
+    /**
+     *
+     * @return gastruck
+     */
     public Truck getTruck() {
         return truck;
     }
