@@ -11,7 +11,7 @@ public class DrawTruckThread extends DrawCarThread {
         this.myFrame = myFrame;
         this.delay =  delay;
         this.gasContainer = gasContainer;
-        newCar = myFrame.truckRoad;
+        newCar = myFrame.carRoad;
 
     }
 
@@ -20,14 +20,14 @@ public class DrawTruckThread extends DrawCarThread {
     public void run() {
 
         gasContainer.refillGaz();
-        newCar.getCar().x = 0;
+        newCar.getTruck().x = 0;
 
 
         Timer timer = new Timer(delay, new ActionListener(){
             public void actionPerformed(ActionEvent e) {
 
                 try {
-                    newCar.getCar().move();
+                    newCar.getTruck().move();
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }

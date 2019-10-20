@@ -12,7 +12,7 @@ import java.io.IOException;
 
 
 public class Car {
-    protected static final int D_W = 1422;
+    protected static final int D_W = 800;
     protected static final int D_H = 400;
     protected static final int INCREMENT = 5;
     int x, y;
@@ -31,7 +31,7 @@ public class Car {
         this.y = y;
         this.gasContainer = gasContainer;
 
-         rand = (int) (Math.random()*4);
+         rand = (int) (Math.random()*3);
         try {
             car = ImageIO.read(new File("new_car_image_"+rand+".png" ));
         } catch (IOException e) {
@@ -56,7 +56,7 @@ public class Car {
 
         if(x == D_W / 2) {
             try {
-                gasContainer.fillCar((int) (Math.random()*50));
+                gasContainer.fillCar((int) (Math.random()*50) + 5);
                 synchronized (DrawCarThread.obj)
                 {
                     DrawCarThread.obj.wait(1500);

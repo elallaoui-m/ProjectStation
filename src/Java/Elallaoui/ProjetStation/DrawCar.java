@@ -14,18 +14,17 @@ public class DrawCar extends JPanel  {
 
     int x,y;
     Car car;
+    Truck truck;
 
     public DrawCar() {
     }
 
-    public DrawCar(int x, int y, GasContainer gasContainer) {
+    public DrawCar(Car car,Truck truck) {
         this.x = x;
         this.y = y;
 
-        car= new Car(x,y,gasContainer);
-
-
-
+        this.car = car;
+        this.truck = truck;
     }
 
     @Override
@@ -34,16 +33,20 @@ public class DrawCar extends JPanel  {
 
         BufferedImage myImage = null;
         try {
-            myImage = ImageIO.read(new File("gasStation_prime.png"));
+            myImage = ImageIO.read(new File("image_station.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
         g.drawImage(myImage,0,0,null);
         car.drawCar(g);
+        truck.drawCar(g);
 
     }
 
     public Car getCar() {
         return car;
+    }
+    public Truck getTruck() {
+        return truck;
     }
 }

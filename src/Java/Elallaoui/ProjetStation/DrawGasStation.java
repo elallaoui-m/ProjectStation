@@ -18,7 +18,7 @@ public class DrawGasStation extends JPanel {
 
         BufferedImage myImage = null;
         try {
-            myImage = ImageIO.read(new File("gasStation.png"));
+            myImage = ImageIO.read(new File("image_station.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }

@@ -17,11 +17,13 @@ public class MainWindows extends JFrame {
 
     JProgressBar progressBar;
     JPanel progress;
-    //JPanel gasStation;
-    DrawGasStation gasStation;
+
     DrawCar carRoad;
     DrawTruck truckRoad;
     GasContainer gasContainer;
+
+    Car car;
+    Truck truck;
 
 
 
@@ -31,52 +33,30 @@ public class MainWindows extends JFrame {
 
         // parametre frame
         super("Gas Station");
-        setSize(1422,800);
+        setSize(800,580);
         setLocationRelativeTo(null);
         setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BoxLayout(this.getContentPane(),BoxLayout.Y_AXIS));
-        //setLayout(new FlowLayout());
-
 
         gasContainer = new GasContainer(this);
         progressBar = new JProgressBar();
         progressBar.setOrientation(JProgressBar.HORIZONTAL);
-        //progressBar.setSize(200,200);
-
-
-        gasStation = new DrawGasStation();
 
         progress = new JPanel();
 
 
-        carRoad = new DrawCar(0,600,gasContainer);
-        truckRoad = new DrawTruck(-300,600,gasContainer);
-
-
+        car = new Car(0,380,gasContainer);
+        truck = new Truck(-250,350,gasContainer);
+        carRoad = new DrawCar(car,truck);
 
         //add to jframe
         getContentPane().add(carRoad);
-        //getContentPane().add(gasStation);
-        //getContentPane().add(truckRoad);
-
-
-        gasStation.setLayout(new FlowLayout());
-        //gasStation.setBackground(Color.red);
-        gasStation.add(progressBar);
 
 
 
-       /*BufferedImage myImage = null;
-        try {
-            myImage = ImageIO.read(new File("image.jpg"));
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
 
-        gasStation.add(new ImagePanel(myImage));*/
-
-
+        carRoad.add(progressBar);
 
     }
 
@@ -89,10 +69,6 @@ public class MainWindows extends JFrame {
 
     public JPanel getProgress() {
         return progress;
-    }
-
-    public JPanel getGasStation() {
-        return gasStation;
     }
 
     public JPanel getCarRoad() {
