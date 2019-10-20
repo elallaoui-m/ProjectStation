@@ -2,9 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d7d673-4690-416e-9015-133ff8629be2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/GasTruck.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gasStation_prime.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawGasStation.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Car.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCarThread$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCarThread$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCarThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCarThread.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/MainWindows$ImagePanel.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/MainWindows.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/MainWindows.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Truck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Truck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCarThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCarThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/MainWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/MainWindows.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

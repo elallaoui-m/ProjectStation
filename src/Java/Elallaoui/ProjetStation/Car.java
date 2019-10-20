@@ -1,16 +1,18 @@
 package Java.Elallaoui.ProjetStation;
 
-import com.sun.org.apache.xerces.internal.parsers.CachingParserPool;
+/**
+ * class car, c'est la classe permettant de la creation d'une voiture en ajoutant une image
+ *
+ */
 
 import javax.imageio.ImageIO;
 import java.awt.*;
 import java.io.File;
 import java.io.IOException;
 
-import static java.lang.Thread.sleep;
 
 public class Car {
-    protected static final int D_W = 800;
+    protected static final int D_W = 1422;
     protected static final int D_H = 400;
     protected static final int INCREMENT = 5;
     int x, y;
@@ -36,10 +38,20 @@ public class Car {
             e.printStackTrace();
         }
     }
+
+    /**
+     *
+     * @param g object graphic pour la creation d'image
+     */
     public void drawCar(Graphics g) {
         g.drawImage(car,x,y,null);
     }
 
+    /**
+     * faire deplacer la voitre d'une pas de 5 chaque fois
+     * si on arrive a la fin du frame on redeplace la voiture a la 1ere place
+     * @throws IOException
+     */
     public void move() throws IOException {
 
         if(x == D_W / 2) {

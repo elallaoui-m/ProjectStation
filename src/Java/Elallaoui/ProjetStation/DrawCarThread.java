@@ -6,6 +6,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 
+/**
+ *  Thread qui lance l'annimation d'une voitre
+ */
+
 public class DrawCarThread extends Thread{
 
     protected MainWindows myFrame;
@@ -26,6 +30,10 @@ public class DrawCarThread extends Thread{
     }
 
 
+    /**
+     * 
+     *
+     */
     @Override
     public void run() {
         super.run();

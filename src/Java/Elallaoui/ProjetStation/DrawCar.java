@@ -1,8 +1,15 @@
 package Java.Elallaoui.ProjetStation;
 
+import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
+import java.awt.image.BufferedImage;
+import java.io.File;
+import java.io.IOException;
 
+/**
+ *  JPanel pour le dessin de la voiture
+ */
 public class DrawCar extends JPanel  {
 
     int x,y;
@@ -16,8 +23,7 @@ public class DrawCar extends JPanel  {
         this.y = y;
 
         car= new Car(x,y,gasContainer);
-        setSize(500,200);
-        setBackground(Color.darkGray);
+
 
 
     }
@@ -25,6 +31,14 @@ public class DrawCar extends JPanel  {
     @Override
     protected void paintComponent(Graphics g) {
         super.paintComponent(g);
+
+        BufferedImage myImage = null;
+        try {
+            myImage = ImageIO.read(new File("gasStation_prime.png"));
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        g.drawImage(myImage,0,0,null);
         car.drawCar(g);
 
     }

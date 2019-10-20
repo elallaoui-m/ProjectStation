@@ -1,7 +1,6 @@
 package Java.Elallaoui.ProjetStation;
 
 
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -9,13 +8,17 @@ import java.awt.image.BufferedImage;
 import java.io.File;
 import java.io.IOException;
 
+/**
+c'est la classe principale qui herite de JFrame et contient la fonctions main
+
+ */
 
 public class MainWindows extends JFrame {
 
     JProgressBar progressBar;
     JPanel progress;
-    JPanel gasStation;
-    JPanel gasStationback;
+    //JPanel gasStation;
+    DrawGasStation gasStation;
     DrawCar carRoad;
     DrawTruck truckRoad;
     GasContainer gasContainer;
@@ -25,39 +28,42 @@ public class MainWindows extends JFrame {
 
     MainWindows()
     {
-        super("Gas Station");
-        setSize(800,800);
 
+        // parametre frame
+        super("Gas Station");
+        setSize(1422,800);
         setLocationRelativeTo(null);
+        setResizable(false);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BoxLayout(this.getContentPane(),BoxLayout.Y_AXIS));
+        //setLayout(new FlowLayout());
 
 
         gasContainer = new GasContainer(this);
         progressBar = new JProgressBar();
-        progressBar.setOrientation(JProgressBar.VERTICAL);
-        progressBar.setSize(200,200);
+        progressBar.setOrientation(JProgressBar.HORIZONTAL);
+        //progressBar.setSize(200,200);
 
+
+        gasStation = new DrawGasStation();
 
         progress = new JPanel();
-        gasStationback = new JPanel();
-        gasStation = new JPanel();
-        carRoad = new DrawCar(0,20,gasContainer);
-        truckRoad = new DrawTruck(-300,20,gasContainer);
+
+
+        carRoad = new DrawCar(0,600,gasContainer);
+        truckRoad = new DrawTruck(-300,600,gasContainer);
 
 
 
+        //add to jframe
         getContentPane().add(carRoad);
-        getContentPane().add(gasStation);
-        getContentPane().add(truckRoad);
+        //getContentPane().add(gasStation);
+        //getContentPane().add(truckRoad);
 
-        gasStation.setBackground(Color.red);
+
+        gasStation.setLayout(new FlowLayout());
+        //gasStation.setBackground(Color.red);
         gasStation.add(progressBar);
-
-
-
-
-
 
 
 
@@ -95,6 +101,9 @@ public class MainWindows extends JFrame {
 
 
 
+    /**
+     *
+     *Image panel pour la mettre une image comme backgroud d'un component
        class ImagePanel extends JComponent {
         private Image image;
         public ImagePanel(Image image) {
@@ -105,7 +114,8 @@ public class MainWindows extends JFrame {
             super.paintComponent(g);
             g.drawImage(image, 0, 0, this);
         }
-    }
+    }*/
+
 
 
     public static void main(String[] args) {
