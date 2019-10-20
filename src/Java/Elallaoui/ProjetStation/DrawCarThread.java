@@ -8,17 +8,19 @@ import java.io.IOException;
 
 public class DrawCarThread extends Thread{
 
-    MainWindows myFrame;
-    DrawCar newCar;
-    GasContainer gasContainer;
+    protected MainWindows myFrame;
+    protected DrawCar newCar;
+    protected  GasContainer gasContainer;
     public final static Object obj = new Object();
 
     int delay;
 
-    public DrawCarThread(MainWindows myFrame , int delay,GasContainer gasContainer) {
+    public DrawCarThread() {
+    }
+
+    public DrawCarThread(MainWindows myFrame , int delay, GasContainer gasContainer) {
         this.myFrame = myFrame;
-        this.newCar = new DrawCar(0,20,gasContainer);
-        myFrame.add(newCar);
+        this.newCar = myFrame.carRoad;
         this.delay =  delay;
         this.gasContainer = gasContainer;
     }
@@ -39,6 +41,7 @@ public class DrawCarThread extends Thread{
                 } catch (IOException ex) {
                     ex.printStackTrace();
                 }
+                newCar.validate();
                 newCar.repaint();
 
 
@@ -46,7 +49,9 @@ public class DrawCarThread extends Thread{
                     {
                         if (gasContainer.getGasAmount() < 10)
                         {
+
                             try {
+
                                 Thread thread = new Thread(gasContainer);
                                 thread.start();
                                 obj.wait();

@@ -79,12 +79,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="MainWindows (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java.Elallaoui.ProjetStation.MainWindows" />
+    <configuration name="MainWindows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java.ProjetStation.Elallaoui.MainWindows" />
       <module name="ProjectStation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java.Elallaoui.ProjetStation.*" />
+          <option name="PATTERN" value="Java.ProjetStation.Elallaoui.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -93,11 +93,11 @@
       </method>
     </configuration>
     <configuration name="MainWindows" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="Java.ProjetStation.Elallaoui.MainWindows" />
+      <option name="MAIN_CLASS_NAME" value="Java.Elallaoui.ProjetStation.MainWindows" />
       <module name="ProjectStation" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="Java.ProjetStation.Elallaoui.*" />
+          <option name="PATTERN" value="Java.Elallaoui.ProjetStation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -145,7 +145,9 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>

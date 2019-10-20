@@ -1,10 +1,9 @@
 package Java.Elallaoui.ProjetStation;
 
-import com.sun.xml.internal.messaging.saaj.soap.JpegDataContentHandler;
+
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
-import javax.swing.border.Border;
 import java.awt.*;
 import java.awt.image.BufferedImage;
 import java.io.File;
@@ -17,7 +16,9 @@ public class MainWindows extends JFrame {
     JPanel progress;
     JPanel gasStation;
     JPanel gasStationback;
-    JPanel carRoad;
+    DrawCar carRoad;
+    DrawTruck truckRoad;
+    GasContainer gasContainer;
 
 
 
@@ -31,40 +32,45 @@ public class MainWindows extends JFrame {
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
         setLayout(new BoxLayout(this.getContentPane(),BoxLayout.Y_AXIS));
 
-         progress = new JPanel();
-         gasStation = new JPanel();
-        gasStationback = new JPanel();
-        carRoad = new JPanel();
 
-
-        progress.setBackground(Color.BLUE);
-        gasStationback.setBackground(Color.cyan);
-        gasStation.setBackground(Color.red);
-
-
-        progress.setSize(500,50);
-
-
-
-
-
-        getContentPane().add(gasStation);
-
-
+        gasContainer = new GasContainer(this);
         progressBar = new JProgressBar();
-        progressBar.setOrientation(JProgressBar.HORIZONTAL);
+        progressBar.setOrientation(JProgressBar.VERTICAL);
+
+
+        progress = new JPanel();
+        gasStationback = new JPanel();
+        gasStation = new JPanel();
+        carRoad = new DrawCar(0,20,gasContainer);
+        truckRoad = new DrawTruck(-300,20,gasContainer);
+
+        gasStation.setLayout(new BorderLayout());
+        gasStation.add(gasStationback,BorderLayout.LINE_START);
+        gasStation.add(progress,BorderLayout.LINE_END);
         progress.add(progressBar);
 
 
 
-       BufferedImage myImage = null;
+
+        getContentPane().add(carRoad);
+        getContentPane().add(gasStation);
+        getContentPane().add(truckRoad);
+
+
+
+
+
+
+
+
+/*       BufferedImage myImage = null;
         try {
             myImage = ImageIO.read(new File("image.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        add(new ImagePanel(myImage));
+        add(new ImagePanel(myImage));*/
 
 
 
@@ -89,9 +95,7 @@ public class MainWindows extends JFrame {
         return carRoad;
     }
 
-    public void setCarRoad(JPanel carRoad) {
-        this.carRoad = carRoad;
-    }
+
 
        class ImagePanel extends JComponent {
         private Image image;
@@ -110,8 +114,8 @@ public class MainWindows extends JFrame {
         MainWindows mainWindows = new MainWindows();
         mainWindows.setVisible(true);
 
-        GasContainer gasContainer = new GasContainer();
-       DrawCarThread thread1 = new DrawCarThread(mainWindows,10,gasContainer);
+
+       DrawCarThread thread1 = new DrawCarThread(mainWindows,10,mainWindows.gasContainer);
        thread1.start();
 
     }

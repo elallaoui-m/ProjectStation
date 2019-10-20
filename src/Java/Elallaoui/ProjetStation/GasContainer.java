@@ -6,12 +6,15 @@ public class GasContainer implements Runnable{
 
     int gasAmount;
     boolean isEmpty;
+    MainWindows myframe;
 
 
-    public GasContainer() {
+    public GasContainer(MainWindows myframe) {
 
         gasAmount = 100;
         isEmpty = false;
+        this.myframe = myframe;
+
     }
 
     public int getGasAmount() {
@@ -32,14 +35,10 @@ public class GasContainer implements Runnable{
 
     public void refillGaz()
     {
-        synchronized (DrawCarThread.obj)
-        {
-             setGasAmount(100);
-                isEmpty = false;
 
-                DrawCarThread.obj.notify();
+        setGasAmount(100);
+        isEmpty = false;
 
-        }
 
     }
 
@@ -57,6 +56,16 @@ public class GasContainer implements Runnable{
 
     @Override
     public void run() {
-        refillGaz();
+
+        DrawTruckThread drawTruckThread = new DrawTruckThread(myframe,10,this);
+        drawTruckThread.start();
+
+        while (true)
+        {
+            if (gasAmount == 100)
+                drawTruckThread.stop();
+            break;
+        }
+
     }
 }

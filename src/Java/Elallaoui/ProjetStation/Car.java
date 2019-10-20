@@ -19,6 +19,11 @@ public class Car {
 
     protected   Image car;
 
+    public  Car()
+    {
+
+    }
+
     public Car(int x, int y,GasContainer gasContainer) {
         this.x = x;
         this.y = y;

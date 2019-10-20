@@ -8,13 +8,16 @@ public class DrawCar extends JPanel  {
     int x,y;
     Car car;
 
-    public DrawCar(int x, int y,GasContainer gasContainer) {
+    public DrawCar() {
+    }
+
+    public DrawCar(int x, int y, GasContainer gasContainer) {
         this.x = x;
         this.y = y;
 
         car= new Car(x,y,gasContainer);
         setSize(500,200);
-        //setBackground(Color.darkGray);
+        setBackground(Color.darkGray);
 
 
     }
