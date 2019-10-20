@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2d7d673-4690-416e-9015-133ff8629be2" name="Default Changelist" comment="almost done">
+    <list default="true" id="e2d7d673-4690-416e-9015-133ff8629be2" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/GasTruck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" afterDir="false" />
@@ -21,6 +21,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="ROOT_SYNC" value="DONT_SYNC" />
   </component>
   <component name="ProjectId" id="1SLP01mbIUPfKh4KTXVrOkuILZh" />
   <component name="ProjectLevelVcsManager">
@@ -28,8 +29,8 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="Errors" />
+    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/app-1.5.1/resources/app/git/cmd/git.exe" />
+    <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -68,6 +69,19 @@
     </configuration>
     <configuration name="MainClass" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Java.Elallaoui.ProjetStation.MainClass" />
+      <module name="ProjectStation" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Java.Elallaoui.ProjetStation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainWindows (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="Java.Elallaoui.ProjetStation.MainWindows" />
       <module name="ProjectStation" />
       <extension name="coverage">
         <pattern>
@@ -121,8 +135,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.MainWindows (1)" />
-        <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.DrawCar" />
+        <item itemvalue="Application.MainClass" />
         <item itemvalue="Application.MainWindows" />
       </list>
     </recent_temporary>
@@ -155,6 +169,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
+    <MESSAGE value="almost done..." />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done..." />
   </component>
 </project>

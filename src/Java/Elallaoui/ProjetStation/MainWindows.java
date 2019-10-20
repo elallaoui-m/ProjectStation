@@ -26,7 +26,7 @@ public class MainWindows extends JFrame {
     MainWindows()
     {
         super("Gas Station");
-        setSize(800,500);
+        setSize(800,800);
 
         setLocationRelativeTo(null);
         setDefaultCloseOperation(WindowConstants.EXIT_ON_CLOSE);
@@ -111,7 +111,6 @@ public class MainWindows extends JFrame {
     public static void main(String[] args) {
         MainWindows mainWindows = new MainWindows();
         mainWindows.setVisible(true);
-
 
        DrawCarThread thread1 = new DrawCarThread(mainWindows,10,mainWindows.gasContainer);
        thread1.start();
