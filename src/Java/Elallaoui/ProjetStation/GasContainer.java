@@ -67,11 +67,7 @@ public class GasContainer implements Runnable {
         DrawTruckThread drawTruckThread = new DrawTruckThread(myframe, 10, this);
         drawTruckThread.start();
 
-        while (true) {
-            if (gasAmount == 100)
-                drawTruckThread.stop();
-            break;
-        }
+
 
     }
 }

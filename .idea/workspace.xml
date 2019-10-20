@@ -1,26 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ArtifactsWorkspaceSettings">
+    <artifacts-to-build>
+      <artifact name="ProjectStation:jar" />
+    </artifacts-to-build>
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d7d673-4690-416e-9015-133ff8629be2" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ProjectStation_jar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCarThread$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCarThread$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCarThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCarThread.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruck.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruckThread$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruckThread$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruckThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruckThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/GasContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/GasContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/MainWindows.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/MainWindows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Truck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Truck.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCarThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCarThread.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawTruck.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawTruckThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawTruckThread.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/GasContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/GasContainer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/MainWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/MainWindows.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Truck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Truck.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +36,10 @@
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$/AppData/Local/GitHubDesktop/app-1.5.1/resources/app/git/cmd/git.exe" />
+    <property name="last_opened_file_path" value="E:/" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
