@@ -31,11 +31,12 @@ public class DrawCarThread extends Thread{
         super.run();
 
         gasContainer.fillCar((int) (Math.random()*50));
-        myFrame.getProgressBar().setValue(gasContainer.gasAmount);
+
 
         Timer timer = new Timer(delay, new ActionListener(){
             public void actionPerformed(ActionEvent e) {
 
+                myFrame.progressBar.setValue(gasContainer.gasAmount);
                 try {
                     newCar.getCar().move();
                 } catch (IOException ex) {

@@ -36,6 +36,7 @@ public class MainWindows extends JFrame {
         gasContainer = new GasContainer(this);
         progressBar = new JProgressBar();
         progressBar.setOrientation(JProgressBar.VERTICAL);
+        progressBar.setSize(200,200);
 
 
         progress = new JPanel();
@@ -44,18 +45,14 @@ public class MainWindows extends JFrame {
         carRoad = new DrawCar(0,20,gasContainer);
         truckRoad = new DrawTruck(-300,20,gasContainer);
 
-        gasStation.setLayout(new BorderLayout());
-        gasStation.add(gasStationback,BorderLayout.LINE_START);
-        gasStation.add(progress,BorderLayout.LINE_END);
-        progress.add(progressBar);
-
-
 
 
         getContentPane().add(carRoad);
         getContentPane().add(gasStation);
         getContentPane().add(truckRoad);
 
+        gasStation.setBackground(Color.red);
+        gasStation.add(progressBar);
 
 
 
@@ -63,14 +60,15 @@ public class MainWindows extends JFrame {
 
 
 
-/*       BufferedImage myImage = null;
+
+       /*BufferedImage myImage = null;
         try {
             myImage = ImageIO.read(new File("image.jpg"));
         } catch (IOException e) {
             e.printStackTrace();
         }
 
-        add(new ImagePanel(myImage));*/
+        gasStation.add(new ImagePanel(myImage));*/
 
 
 

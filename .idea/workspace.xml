@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e2d7d673-4690-416e-9015-133ff8629be2" name="Default Changelist" comment="">
+    <list default="true" id="e2d7d673-4690-416e-9015-133ff8629be2" name="Default Changelist" comment="almost done">
       <change afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/GasTruck.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" afterDir="false" />
@@ -152,5 +152,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="almost done" />
   </component>
 </project>
