@@ -68,7 +68,7 @@ public class Car {
         }
         if (x == 0-car.getWidth(null) ) {
             x = D_W+car.getWidth(null)/2;
-            rand = (int) (Math.random()*4);
+            rand = (int) (Math.random()*3);
             car = car = ImageIO.read(new File("new_car_image_"+rand+".png" ));
 
 

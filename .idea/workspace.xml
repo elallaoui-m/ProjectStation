@@ -2,27 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e2d7d673-4690-416e-9015-133ff8629be2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/73014268-vecteur-de-station-service-image-vectorielle-simple-de-dessin-animé.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ban.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/depositphotos_141167040-stock-illustration-cute-cartoon-vector-illustration-of.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/image_station.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/une-station-service-28071491.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/image.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_car_image_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/new_car_image_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/new_car_image_3.png" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Car.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Car.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawCar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawGasStation.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawGasStation.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruckThread$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruckThread$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawGasStation.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruckThread.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/DrawTruckThread.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/MainWindows.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/MainWindows.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Truck.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/Truck.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/Car.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawCar.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawGasStation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawGasStation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawTruckThread.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawTruckThread.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/DrawGasStation.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/MainWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/MainWindows.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -52,12 +38,12 @@
     <property name="settings.editor.selected.configurable" value="vcs.Git" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Mehdi\IdeaProjects\ProjectStation\src\Java\ProjetStation\Elallaoui" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Mehdi\IdeaProjects\ProjectStation" />
       <recent name="C:\Users\Mehdi\IdeaProjects\ProjectStation\src\Java\Elallaoui\ProjetStation" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Mehdi\IdeaProjects\ProjectStation\src\Java\ProjetStation\Elallaoui" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -171,6 +157,14 @@
       <option name="presentableId" value="Default" />
       <updated>1571339676026</updated>
     </task>
+    <task id="LOCAL-00001" summary="almost done...">
+      <created>1571602135417</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1571602135417</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">

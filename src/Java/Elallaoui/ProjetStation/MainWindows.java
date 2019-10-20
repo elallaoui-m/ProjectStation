@@ -46,7 +46,7 @@ public class MainWindows extends JFrame {
         progress = new JPanel();
 
 
-        car = new Car(0,380,gasContainer);
+        car = new Car(0,430,gasContainer);
         truck = new Truck(-250,350,gasContainer);
         carRoad = new DrawCar(car,truck);
 
