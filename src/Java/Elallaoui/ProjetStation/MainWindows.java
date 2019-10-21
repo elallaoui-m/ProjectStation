@@ -64,6 +64,7 @@ public class MainWindows extends JFrame {
      */
 
 
+
     public static void main(String[] args) {
         MainWindows mainWindows = new MainWindows();
         mainWindows.setVisible(true);
@@ -76,6 +77,7 @@ public class MainWindows extends JFrame {
     public JProgressBar getProgressBar() {
         return progressBar;
     }
+
 
     public JPanel getProgress() {
         return progress;

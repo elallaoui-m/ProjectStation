@@ -7,11 +7,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e2d7d673-4690-416e-9015-133ff8629be2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/artifacts/ProjectStation_jar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/META-INF/MANIFEST.MF" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/GasContainer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/ProjectStation/Java/Elallaoui/ProjetStation/GasContainer.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/GasContainer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/GasContainer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/MainWindows.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Java/Elallaoui/ProjetStation/MainWindows.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
